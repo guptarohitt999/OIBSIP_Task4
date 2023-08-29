@@ -1,0 +1,63 @@
+.container1{
+    background-color: rgb(10, 222, 158);
+    position: relative;
+    top: 50px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px black;
+    left:35%;
+}
+.btn{
+    margin-top: 10px;
+    position: relative;
+    left: 40%;
+    padding:0px 50px;
+    margin-bottom: 10px;
+}
+.main1{
+    position: relative;
+    background-color: aqua;
+    width:250px;
+    padding: 5px 50px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    left:35%;
+    box-shadow: 0px 0px 20px black;
+}
+
+.input{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.submit{
+    position: relative;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: rgb(94, 224, 135);
+    left:30%;
+}
+
+.submit:hover{
+    background-color:rgb(8, 215, 74) ;
+}
+
+.main2{
+    background-color: rgb(236, 134, 235);
+    width: 50%;
+    padding: 10px 20px;
+    margin-top: 10px;
+    position: relative;
+    left:20%;
+    border-radius: 10px;
+}
+
+th{
+    padding:0px 10px; 
+    text-align: center;
+}
+
+td{
+    padding:0px 10px;
+    text-align: center;
+}

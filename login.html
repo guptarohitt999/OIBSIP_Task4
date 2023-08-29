@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/main1/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Login_page</title>
+</head>
+<body>
+    <div class="container" style="width: 400px;">
+        <div class="heading" style="text-align: center;"><h4>Login In</h4></div><hr>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+            {% if message%}
+            <h5 style="color: red;">{{message}}</h5>
+            {%endif%}
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control"  name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+            <div class="form-group form-check">
+            <p class="para">New User?<a class="anch" href="{% url 'signup' %}">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

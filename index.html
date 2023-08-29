@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/main1/style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main1">
+        <h2>Enter Employee detail</h2><hr>
+        <form action="" method="post">
+            {% csrf_token %}
+            <label>Name</label><br>
+            <input type="text" class="input" required name="Name"><br>
+            <label>Email</label><br>
+            <input type="email" class="input" required name="Email"><br>
+            <label>Phone</label><br>
+            <input type="text" class="input" required name="Phone"><br>
+            <label>Address</label><br>
+            <input type="text" class="input" required name="Address"><br><br>
+            <input type="submit" class="submit" value="Submit"><br>
+        </form>
+    </div>
+<div class="main2">
+    <h2>Employee Detail</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in name %}
+            <tr>
+                <td>{{i.Name}}</td>
+                <td>{{i.Email}}</td>
+                <td>{{i.Phone}}</td>
+                <td>{{i.Address}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

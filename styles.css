@@ -1,0 +1,31 @@
+.container{
+    background-color: aquamarine;
+    position: relative;
+    top: 50px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px black;
+}
+
+.heading{
+    color: rgb(1, 112, 160);
+}
+.btn{
+    margin-top: 10px;
+    position: relative;
+    left: 40%;
+    padding:0px 20px
+}
+.para{
+    position: relative;
+    left:-15px;
+    padding-right: 10px;
+}
+.anch{
+    margin-left: 10px;
+}
+
+.form-group
+{
+    margin-bottom: 15px;
+}
